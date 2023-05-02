@@ -13,4 +13,19 @@ html{
     font-weight: 300;
     /* Garante que as fontes serão reinderizadas, priorizando a leitura*/
     text-rendering: optimizeLegibility;
+    color: #fff;
+    font-size: 20px;
+}
+
+header{
+
+    height: 100vh; /* vh é tipo porcentagem, mas a porcentagem analiza se há um item pai. Se houver, ele vai levar esse elemento em consideração. o vh leva em consideração o tamanho da tela.*/
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(img/pizza-fundo.jpg);
+    background-size: cover;
+    
+}
+
+header h1{
+    margin: 0;
+    font-weight: 10;
 }

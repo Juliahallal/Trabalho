@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ele vai levar em conta as bordas ao posicionar os itens*/
+    /* border = 0; no caso excluiria todas as bordas*/
+}
+
+html{
+
+    background-color: #fff;
+    color: #555;
+    font-family: 'Raleway', 'Arial', 'sans-serif';
+    font-weight: 300;
+    /* Garante que as fontes serão reinderizadas, priorizando a leitura*/
+    text-rendering: optimizeLegibility;
+}

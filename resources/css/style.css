@@ -22,10 +22,66 @@ header{
     height: 100vh; /* vh é tipo porcentagem, mas a porcentagem analiza se há um item pai. Se houver, ele vai levar esse elemento em consideração. o vh leva em consideração o tamanho da tela.*/
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(img/pizza-fundo.jpg);
     background-size: cover;
+    font-size: 25px;
+   
     
 }
 
 header h1{
     margin: 0;
     font-weight: 10;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 4px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.hero-text-box{
+
+    position: absolute;
+    top: 40%;
+    left: 4%;
+}
+
+.btn:link,
+.btn.visited{
+    font-size: 18px;
+    border: solid 2px orange;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    transition:background-color 0.3s, color, 0.3s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: orange;
+   
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: orange;
+    transition:background-color 0.3s, color, 0.3s;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: rgb(251, 187, 67);
+    font-weight: bold;
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: rgb(251, 187, 67);
+    font-weight: bold;
+    color: #fff;
 }

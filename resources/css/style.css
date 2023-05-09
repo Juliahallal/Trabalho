@@ -27,6 +27,33 @@ header{
     
 }
 
+header nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header .logo{
+    width: 100px;
+}
+
+header .main-nav{
+
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 30%;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+header .main-nav li a:hover{
+    border-bottom:solid 2px #fc666d;
+}
+
+
 header h1{
     margin: 0;
     font-weight: 10;
@@ -51,9 +78,9 @@ header a {
 .btn:link,
 .btn.visited{
     font-size: 18px;
-    border: solid 2px orange;
+   /* border: solid 1px #fcb369;*/
     border-radius: 20px;
-    padding: 5px 15px;
+    padding: 10px 25px;
     margin-right: 10px;
     transition:background-color 0.3s, color, 0.3s;
     
@@ -61,27 +88,27 @@ header a {
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: orange;
+    background: linear-gradient(to top right,#ffb567,#fe866c,#fc666d);
    
     
 }
 
 .btn-ghost:link,
 .btn-ghost:visited{
-    color: orange;
+    color: white;
     transition:background-color 0.3s, color, 0.3s;
 }
 
 .btn-full:hover,
 .btn-full:active{
-    background-color: rgb(251, 187, 67);
+    color: #555;
     font-weight: bold;
 
 }
 
 .btn-ghost:hover,
 .btn-ghost:active{
-    background-color: rgb(251, 187, 67);
+    background: linear-gradient(to top right,#ffb567,#fe866c,#fc666d);
     font-weight: bold;
-    color: #fff;
+    color: #555;
 }

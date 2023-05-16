@@ -51,6 +51,7 @@ header .main-nav{
 
 header .main-nav li a:hover{
     border-bottom:solid 2px #fc666d;
+    font-weight: bold;
 }
 
 

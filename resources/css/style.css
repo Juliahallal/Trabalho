@@ -13,7 +13,7 @@ html{
     font-weight: 300;
     /* Garante que as fontes serão reinderizadas, priorizando a leitura*/
     text-rendering: optimizeLegibility;
-    color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
@@ -23,7 +23,7 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(img/pizza-fundo.jpg);
     background-size: cover;
     font-size: 25px;
-   
+    color: #fff;
     
 }
 
@@ -37,6 +37,12 @@ header nav{
 
 header .logo{
     width: 100px;
+}
+
+.logo:hover{
+    filter: drop-shadow( 0px 4px 4px #fff);
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
 }
 
 header .main-nav{
@@ -112,4 +118,39 @@ header a {
     background: linear-gradient(to top right,#ffb567,#fe866c,#fc666d);
     font-weight: bold;
     color: #555;
+}
+
+
+.section-features{
+    margin: 20px 10%;
+}
+
+.section-features{
+    text-align: center;
+}
+.section-features h2{
+    margin-bottom: 20px;
+}
+
+.section-features h2::after{
+    content:" ";
+    height: 5px;
+    width: 100px;
+    background-color: orange;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.row {
+    max-width: 1140px; 
+    margin: 0 auto 0 auto; 
+ }
+
+ion-icon {
+    font-size: 350%; 
+    justify-content: center;
+    color: #e67e22; 
+    margin-bottom: 10px; 
 }

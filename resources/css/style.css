@@ -29,7 +29,7 @@ header{
 
 header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
     padding-top: 20px;
     align-items: center;
     margin-left: 20px;
@@ -48,11 +48,17 @@ header .logo{
 header .main-nav{
 
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 90%;
-    margin-left: 30%;
     text-transform: uppercase;
     list-style: none;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+
+header .main-nav li{
+    margin-right: 30px;
 }
 
 header .main-nav li a:hover{
@@ -120,7 +126,10 @@ header a {
     color: #555;
 }
 
-
+section {
+    padding: 80px 0;
+  }
+  
 .section-features{
     margin: 20px 10%;
 }
@@ -153,4 +162,43 @@ ion-icon {
     justify-content: center;
     color: #e67e22; 
     margin-bottom: 10px; 
+}
+
+.galeria-fotos .image-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.galeria-fotos .image-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.galeria-fotos .fotos{
+    width: 100%;
+    margin: 0;
+}
+
+.galeria-fotos img{
+    width: 100%;
+    height: 216px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .btn:link,
+    .btn.visited{
+    display: block;
+    transition: background-color 0.3s, color, 0.3s;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.galeria-fotos .image-showcase li{
+    display: block;
+    float: left;
+    width: 90%;
+    margin-left: 15px;
+    
 }

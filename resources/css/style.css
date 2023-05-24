@@ -185,8 +185,10 @@ ion-icon {
     height: 216px;
 }
 
-@media screen and (max-width: 600px) {
 
+@media screen and (max-width: 800px) {
+
+    
     .btn:link,
     .btn.visited{
     display: block;
@@ -198,7 +200,30 @@ ion-icon {
 .galeria-fotos .image-showcase li{
     display: block;
     float: left;
-    width: 80%;
+    width: 40%;
     margin-left: 15px;
     
 }}
+
+@media screen and (max-width: 600px) {
+
+    
+    .btn:link,
+    .btn.visited{
+    display: block;
+    transition: background-color 0.3s, color, 0.3s;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.galeria-fotos .image-showcase li{
+    display: block;
+    float: left;
+    width: 90%;
+    margin-left: 15px;
+    
+}}
+
+
+
+
